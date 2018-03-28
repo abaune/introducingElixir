@@ -13,7 +13,7 @@ defmodule Hof do
   end
 
   def sumsq do
-    # remember second value is accumulator and first if next value in list
+    # remember second value is accumulator and first is next value in list
     List.foldl([2,4,6], 0, &(&2 + &1 * &1))
   end
 end
